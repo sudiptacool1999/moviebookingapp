@@ -1,0 +1,583 @@
+2024-06-27 10:21:25.101  INFO 12800 --- [restartedMain] c.r.m.MoviebookingappApplication         : Starting MoviebookingappApplication using Java 17.0.2 on LAPTOP-K8CD6JID with PID 12800 (C:\Users\SUDIPTA\Desktop\Movie_Booking_System\MovieBookingApplication-main (2)\MovieBookingApplication-main\target\classes started by SUDIPTA in C:\Users\SUDIPTA\Desktop\Movie_Booking_System\MovieBookingApplication-main (2)\MovieBookingApplication-main)
+2024-06-27 10:21:25.105 DEBUG 12800 --- [restartedMain] c.r.m.MoviebookingappApplication         : Running with Spring Boot v2.7.12-SNAPSHOT, Spring v5.3.27
+2024-06-27 10:21:25.106  INFO 12800 --- [restartedMain] c.r.m.MoviebookingappApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-06-27 10:21:25.167  INFO 12800 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-27 10:21:25.168  INFO 12800 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-27 10:21:26.263  INFO 12800 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-27 10:21:26.321  INFO 12800 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 4 MongoDB repository interfaces.
+2024-06-27 10:21:26.878  INFO 12800 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2024-06-27 10:21:26.891  INFO 12800 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-06-27 10:21:26.891  INFO 12800 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+2024-06-27 10:21:27.017  INFO 12800 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-06-27 10:21:27.017  INFO 12800 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1849 ms
+2024-06-27 10:21:27.421  INFO 12800 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.2+8"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@131dbaa2], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@5bd46edf]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@482f53b2], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2024-06-27 10:21:27.441  INFO 12800 --- [cluster-ClusterId{value='667cefcf32a7fc205bc8bece', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:23}] to localhost:27017
+2024-06-27 10:21:27.441  INFO 12800 --- [cluster-ClusterId{value='667cefcf32a7fc205bc8bece', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=30062600}
+2024-06-27 10:21:27.441  INFO 12800 --- [cluster-rtt-ClusterId{value='667cefcf32a7fc205bc8bece', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:24}] to localhost:27017
+2024-06-27 10:21:27.827 DEBUG 12800 --- [restartedMain] c.r.m.security.jwt.AuthTokenFilter       : Filter 'authenticationJwtTokenFilter' configured for use
+2024-06-27 10:21:27.875  INFO 12800 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-06-27 10:21:28.115  INFO 12800 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2c3259f6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d1337c5, org.springframework.security.web.context.SecurityContextPersistenceFilter@631b457b, org.springframework.security.web.header.HeaderWriterFilter@70c03c8a, org.springframework.web.filter.CorsFilter@3b8f9bfa, org.springframework.security.web.authentication.logout.LogoutFilter@17460ae4, com.rbp.moviebookingapp.security.jwt.AuthTokenFilter@33bbd2e1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@711e1e5e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40243cda, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2bd4457c, org.springframework.security.web.session.SessionManagementFilter@e4c19ca, org.springframework.security.web.access.ExceptionTranslationFilter@2bb2a8cc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@392f9342]
+2024-06-27 10:21:29.523  INFO 12800 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2024-06-27 10:21:29.569  INFO 12800 --- [restartedMain] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2024-06-27 10:21:29.645  INFO 12800 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2024-06-27 10:21:29.646  INFO 12800 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2024-06-27 10:21:29.647  INFO 12800 --- [restartedMain] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1719463889644
+2024-06-27 10:21:30.073  INFO 12800 --- [kafka-admin-client-thread | adminclient-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-1 unregistered
+2024-06-27 10:21:30.078  INFO 12800 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2024-06-27 10:21:30.078  INFO 12800 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-06-27 10:21:30.079  INFO 12800 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2024-06-27 10:21:30.098  INFO 12800 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2024-06-27 10:21:30.111  INFO 12800 --- [restartedMain] c.r.m.MoviebookingappApplication         : Started MoviebookingappApplication in 5.425 seconds (JVM running for 6.402)
+2024-06-27 10:23:23.441  INFO 12800 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-27 10:23:23.442  INFO 12800 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-06-27 10:23:23.443  INFO 12800 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-06-27 10:23:23.735  INFO 12800 --- [http-nio-8080-exec-2] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:25}] to localhost:27017
+2024-06-27 10:23:23.960 DEBUG 12800 --- [http-nio-8080-exec-5] c.r.m.controller.MovieController         : here you can access all the available movies
+2024-06-27 10:23:23.974 DEBUG 12800 --- [http-nio-8080-exec-5] c.r.m.controller.MovieController         : listed are available movies
+2024-06-27 10:23:23.982 DEBUG 12800 --- [http-nio-8080-exec-6] c.r.m.controller.MovieController         : here you can access all the available movies
+2024-06-27 10:23:23.986 DEBUG 12800 --- [http-nio-8080-exec-6] c.r.m.controller.MovieController         : listed are available movies
+2024-06-27 10:23:43.991 ERROR 12800 --- [http-nio-8080-exec-8] c.r.m.security.jwt.AuthEntryPointJwt     : Unauthorized error: Bad credentials
+2024-06-27 10:24:00.355 DEBUG 12800 --- [http-nio-8080-exec-3] c.r.m.controller.MovieController         : here you can access all the available movies
+2024-06-27 10:24:00.360 DEBUG 12800 --- [http-nio-8080-exec-3] c.r.m.controller.MovieController         : listed are available movies
+2024-06-27 10:24:00.366 DEBUG 12800 --- [http-nio-8080-exec-4] c.r.m.controller.MovieController         : here you can access all the available movies
+2024-06-27 10:24:00.369 DEBUG 12800 --- [http-nio-8080-exec-4] c.r.m.controller.MovieController         : listed are available movies
+2024-06-27 10:24:09.253 DEBUG 12800 --- [http-nio-8080-exec-2] c.r.m.controller.MovieController         : here you can access all the available movies
+2024-06-27 10:24:09.256 DEBUG 12800 --- [http-nio-8080-exec-2] c.r.m.controller.MovieController         : listed are available movies
+2024-06-27 10:24:09.263 DEBUG 12800 --- [http-nio-8080-exec-1] c.r.m.controller.MovieController         : here you can access all the available movies
+2024-06-27 10:24:09.265 DEBUG 12800 --- [http-nio-8080-exec-1] c.r.m.controller.MovieController         : listed are available movies
+2024-06-27 10:47:22.896 DEBUG 12800 --- [http-nio-8080-exec-9] c.r.m.controller.MovieController         : here you can access all the available movies
+2024-06-27 10:47:22.904 DEBUG 12800 --- [http-nio-8080-exec-9] c.r.m.controller.MovieController         : listed are available movies
+2024-06-27 10:47:22.920 DEBUG 12800 --- [http-nio-8080-exec-10] c.r.m.controller.MovieController         : here you can access all the available movies
+2024-06-27 10:47:22.927 DEBUG 12800 --- [http-nio-8080-exec-10] c.r.m.controller.MovieController         : listed are available movies
+2024-06-27 10:47:41.300 DEBUG 12800 --- [http-nio-8080-exec-6] c.r.m.controller.MovieController         : here you can access all the available movies
+2024-06-27 10:47:41.311 DEBUG 12800 --- [http-nio-8080-exec-6] c.r.m.controller.MovieController         : listed are available movies
+2024-06-27 10:47:41.328 DEBUG 12800 --- [http-nio-8080-exec-7] c.r.m.controller.MovieController         : here you can access all the available movies
+2024-06-27 10:47:41.336 DEBUG 12800 --- [http-nio-8080-exec-7] c.r.m.controller.MovieController         : listed are available movies
+2024-06-27 11:04:13.892 DEBUG 12800 --- [http-nio-8080-exec-4] c.r.m.controller.MovieController         : here you can access all the available movies
+2024-06-27 11:04:13.903 DEBUG 12800 --- [http-nio-8080-exec-4] c.r.m.controller.MovieController         : listed are available movies
+2024-06-27 11:04:13.931 DEBUG 12800 --- [http-nio-8080-exec-5] c.r.m.controller.MovieController         : here you can access all the available movies
+2024-06-27 11:04:13.944 DEBUG 12800 --- [http-nio-8080-exec-5] c.r.m.controller.MovieController         : listed are available movies
+2024-06-27 11:04:41.766 DEBUG 12800 --- [http-nio-8080-exec-2] c.r.m.controller.MovieController         : testentered to book tickets
+2024-06-27 11:04:42.140  INFO 12800 --- [http-nio-8080-exec-2] c.r.m.controller.MovieController         : available tickets 8
+2024-06-27 11:04:42.380 DEBUG 12800 --- [http-nio-8080-exec-2] c.r.m.controller.MovieController         : test booked 2 tickets
+2024-06-27 11:04:42.459  INFO 12800 --- [http-nio-8080-exec-2] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = -1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.springframework.kafka.support.serializer.JsonSerializer
+
+2024-06-27 11:04:42.587  INFO 12800 --- [http-nio-8080-exec-2] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Instantiated an idempotent producer.
+2024-06-27 11:04:42.649  INFO 12800 --- [http-nio-8080-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2024-06-27 11:04:42.650  INFO 12800 --- [http-nio-8080-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2024-06-27 11:04:42.650  INFO 12800 --- [http-nio-8080-exec-2] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1719466482649
+2024-06-27 11:04:42.738  INFO 12800 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Resetting the last seen epoch of partition movieapptopic-0 to 0 since the associated topicId changed from null to 7aLBUB1ESk-CpCR6r-5LAg
+2024-06-27 11:04:42.743  INFO 12800 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : [Producer clientId=producer-1] Cluster ID: 5aV9UcByQBG88-myHxRv0w
+2024-06-27 11:04:43.052  INFO 12800 --- [kafka-producer-network-thread | producer-1] o.a.k.c.p.internals.TransactionManager   : [Producer clientId=producer-1] ProducerId set to 5000 with epoch 0
+2024-06-27 11:04:45.442 DEBUG 12800 --- [http-nio-8080-exec-4] c.r.m.controller.MovieController         : here you can access all the available movies
+2024-06-27 11:04:45.452 DEBUG 12800 --- [http-nio-8080-exec-4] c.r.m.controller.MovieController         : listed are available movies
+2024-06-27 11:04:45.465 DEBUG 12800 --- [http-nio-8080-exec-5] c.r.m.controller.MovieController         : here you can access all the available movies
+2024-06-27 11:04:45.478 DEBUG 12800 --- [http-nio-8080-exec-5] c.r.m.controller.MovieController         : listed are available movies
+2024-06-27 11:05:10.573 DEBUG 12800 --- [http-nio-8080-exec-8] c.r.m.controller.MovieController         : here you can access all the available movies
+2024-06-27 11:05:10.580 DEBUG 12800 --- [http-nio-8080-exec-8] c.r.m.controller.MovieController         : listed are available movies
+2024-06-27 11:05:10.590 DEBUG 12800 --- [http-nio-8080-exec-9] c.r.m.controller.MovieController         : here you can access all the available movies
+2024-06-27 11:05:10.598 DEBUG 12800 --- [http-nio-8080-exec-9] c.r.m.controller.MovieController         : listed are available movies
+2024-06-27 11:13:42.825  INFO 12800 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : [Producer clientId=producer-1] Node -1 disconnected.
+2024-06-27 11:14:07.164  INFO 12800 --- [RMI TCP Connection(62)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-06-27 11:14:07.220  INFO 12800 --- [RMI TCP Connection(62)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-06-27 11:14:07.226  INFO 12800 --- [RMI TCP Connection(62)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-06-27 11:14:07.251  WARN 12800 --- [RMI TCP Connection(62)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [BufferPoolPruner-1-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.2/java.lang.Thread.run(Thread.java:833)
+2024-06-27 11:14:07.254  WARN 12800 --- [RMI TCP Connection(62)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [cluster-ClusterId{value='667cefcf32a7fc205bc8bece', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.2/sun.nio.ch.Net.poll(Native Method)
+ java.base@17.0.2/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:181)
+ java.base@17.0.2/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:285)
+ java.base@17.0.2/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+ java.base@17.0.2/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+ java.base@17.0.2/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+ java.base@17.0.2/java.net.Socket$SocketInputStream.read(Socket.java:966)
+ app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:110)
+ app//com.mongodb.internal.connection.SocketStream.read(SocketStream.java:135)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:713)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:571)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:410)
+ app//com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:369)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:221)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:157)
+ java.base@17.0.2/java.lang.Thread.run(Thread.java:833)
+2024-06-27 11:14:07.255  WARN 12800 --- [RMI TCP Connection(62)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [cluster-rtt-ClusterId{value='667cefcf32a7fc205bc8bece', description='null'}-localhost:27017] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.2/java.lang.Thread.sleep(Native Method)
+ app//com.mongodb.internal.connection.DefaultServerMonitor.waitForNext(DefaultServerMonitor.java:443)
+ app//com.mongodb.internal.connection.DefaultServerMonitor.access$1500(DefaultServerMonitor.java:64)
+ app//com.mongodb.internal.connection.DefaultServerMonitor$RoundTripTimeRunnable.run(DefaultServerMonitor.java:415)
+ java.base@17.0.2/java.lang.Thread.run(Thread.java:833)
+2024-06-27 11:14:07.256  WARN 12800 --- [RMI TCP Connection(62)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [MaintenanceTimer-2-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.2/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.2/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.2/java.lang.Thread.run(Thread.java:833)
+2024-06-27 11:14:07.259  WARN 12800 --- [RMI TCP Connection(62)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [kafka-producer-network-thread | producer-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.2/sun.nio.ch.WEPoll.wait(Native Method)
+ java.base@17.0.2/sun.nio.ch.WEPollSelectorImpl.doSelect(WEPollSelectorImpl.java:111)
+ java.base@17.0.2/sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:129)
+ java.base@17.0.2/sun.nio.ch.SelectorImpl.select(SelectorImpl.java:141)
+ app//org.apache.kafka.common.network.Selector.select(Selector.java:873)
+ app//org.apache.kafka.common.network.Selector.poll(Selector.java:465)
+ app//org.apache.kafka.clients.NetworkClient.poll(NetworkClient.java:560)
+ app//org.apache.kafka.clients.producer.internals.Sender.runOnce(Sender.java:328)
+ app//org.apache.kafka.clients.producer.internals.Sender.run(Sender.java:243)
+ java.base@17.0.2/java.lang.Thread.run(Thread.java:833)
+2024-06-27 11:14:07.291  INFO 12800 --- [RMI TCP Connection(62)-127.0.0.1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2024-06-27 11:14:07.298  INFO 12800 --- [RMI TCP Connection(62)-127.0.0.1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2024-06-27 11:14:07.298  INFO 12800 --- [RMI TCP Connection(62)-127.0.0.1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-06-27 11:14:07.299  INFO 12800 --- [RMI TCP Connection(62)-127.0.0.1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2024-06-27 11:14:07.299  INFO 12800 --- [RMI TCP Connection(62)-127.0.0.1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.producer for producer-1 unregistered
+2024-06-27 19:31:07.861  INFO 23240 --- [main] c.r.m.c.MovieBookingAppControllerTest    : Starting MovieBookingAppControllerTest using Java 17.0.2 on LAPTOP-K8CD6JID with PID 23240 (started by SUDIPTA in C:\Users\SUDIPTA\Desktop\Movie_Booking_System\MovieBookingApplication-main (2)\MovieBookingApplication-main)
+2024-06-27 19:31:07.863 DEBUG 23240 --- [main] c.r.m.c.MovieBookingAppControllerTest    : Running with Spring Boot v2.7.12-SNAPSHOT, Spring v5.3.27
+2024-06-27 19:31:07.864  INFO 23240 --- [main] c.r.m.c.MovieBookingAppControllerTest    : The following 1 profile is active: "test"
+2024-06-27 19:31:10.258  INFO 23240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-27 19:31:10.403  INFO 23240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 128 ms. Found 4 MongoDB repository interfaces.
+2024-06-27 19:31:14.074  INFO 23240 --- [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.2+8"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@773f3360], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@352c3d70]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@4c13ca07], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2024-06-27 19:31:14.124  INFO 23240 --- [cluster-rtt-ClusterId{value='667d70a9c479f3048a891d68', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:27}] to localhost:27017
+2024-06-27 19:31:14.125  INFO 23240 --- [cluster-ClusterId{value='667d70a9c479f3048a891d68', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:26}] to localhost:27017
+2024-06-27 19:31:14.126  INFO 23240 --- [cluster-ClusterId{value='667d70a9c479f3048a891d68', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=52968500}
+2024-06-27 19:31:15.942  INFO 23240 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@60e80279, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7fc56d61, org.springframework.security.web.context.SecurityContextPersistenceFilter@40277077, org.springframework.security.web.header.HeaderWriterFilter@94aeba1, org.springframework.web.filter.CorsFilter@1382a7d8, org.springframework.security.web.authentication.logout.LogoutFilter@578d5d02, com.rbp.moviebookingapp.security.jwt.AuthTokenFilter@6074d638, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f33bb6f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@446cc036, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@402feb85, org.springframework.security.web.session.SessionManagementFilter@14eb96e9, org.springframework.security.web.access.ExceptionTranslationFilter@75dbe490, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3ce7a354]
+2024-06-27 19:31:21.204  INFO 23240 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-06-27 19:31:21.205  INFO 23240 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-06-27 19:31:21.219  INFO 23240 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2024-06-27 19:31:21.299  INFO 23240 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 94 ms
+2024-06-27 19:31:21.419  INFO 23240 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2024-06-27 19:31:21.809  INFO 23240 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2024-06-27 19:31:21.812  INFO 23240 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2024-06-27 19:31:21.812  INFO 23240 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1719496881807
+2024-06-27 19:31:22.922  INFO 23240 --- [kafka-admin-client-thread | adminclient-1] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-1 unregistered
+2024-06-27 19:31:22.931  INFO 23240 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2024-06-27 19:31:22.931  INFO 23240 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-06-27 19:31:22.932  INFO 23240 --- [kafka-admin-client-thread | adminclient-1] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2024-06-27 19:31:22.989  INFO 23240 --- [main] c.r.m.c.MovieBookingAppControllerTest    : Started MovieBookingAppControllerTest in 15.869 seconds (JVM running for 18.397)
+2024-06-27 19:31:23.495 DEBUG 23240 --- [main] c.r.m.controller.MovieController         : here search a movie by its name
+2024-06-27 19:31:23.499 DEBUG 23240 --- [main] c.r.m.controller.MovieController         : searched movies are not available
+2024-06-27 19:31:23.524 DEBUG 23240 --- [main] c.r.m.controller.MovieController         : here you can access all the available movies
+2024-06-27 19:31:23.525 DEBUG 23240 --- [main] c.r.m.controller.MovieController         : listed are available movies
+2024-06-27 19:31:23.552 DEBUG 23240 --- [main] c.r.m.controller.MovieController         : here you can access all the available movies
+2024-06-27 19:31:23.555 DEBUG 23240 --- [main] c.r.m.controller.MovieController         : currently no movies are available
+2024-06-27 19:31:23.573  INFO 23240 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.rbp.moviebookingapp.MoviebookingappApplicationTests], using SpringBootContextLoader
+2024-06-27 19:31:23.575  INFO 23240 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.rbp.moviebookingapp.MoviebookingappApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-06-27 19:31:23.576  INFO 23240 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.rbp.moviebookingapp.MoviebookingappApplicationTests]: MoviebookingappApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-27 19:31:23.588  INFO 23240 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.rbp.moviebookingapp.MoviebookingappApplication for test class com.rbp.moviebookingapp.MoviebookingappApplicationTests
+2024-06-27 19:31:23.593  INFO 23240 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+2024-06-27 19:31:23.595  INFO 23240 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@685e5967, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@106387cf, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3d3c14c3, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@599fab92, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@439054a7, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4fc1eee5, org.springframework.test.context.transaction.TransactionalTestExecutionListener@120661d2, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@36618b3b, org.springframework.test.context.event.EventPublishingTestExecutionListener@7715d43c, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@3763aafd, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@16ca4532, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2cc82c83, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@75a5a912, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5f3bc119, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1b9cfc19, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@765d67dd, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@2e68bd3d]
+2024-06-27 19:31:23.724  INFO 23240 --- [main] c.r.m.MoviebookingappApplicationTests    : Starting MoviebookingappApplicationTests using Java 17.0.2 on LAPTOP-K8CD6JID with PID 23240 (started by SUDIPTA in C:\Users\SUDIPTA\Desktop\Movie_Booking_System\MovieBookingApplication-main (2)\MovieBookingApplication-main)
+2024-06-27 19:31:23.724 DEBUG 23240 --- [main] c.r.m.MoviebookingappApplicationTests    : Running with Spring Boot v2.7.12-SNAPSHOT, Spring v5.3.27
+2024-06-27 19:31:23.725  INFO 23240 --- [main] c.r.m.MoviebookingappApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2024-06-27 19:31:24.569  INFO 23240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-27 19:31:24.607  INFO 23240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 4 MongoDB repository interfaces.
+2024-06-27 19:31:25.115  INFO 23240 --- [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.2+8"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@5f606ab6], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@352c3d70]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@384cd83a], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2024-06-27 19:31:25.123  INFO 23240 --- [cluster-ClusterId{value='667d70b5c479f3048a891d69', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:28}] to localhost:27017
+2024-06-27 19:31:25.124  INFO 23240 --- [cluster-ClusterId{value='667d70b5c479f3048a891d69', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6061500}
+2024-06-27 19:31:25.124  INFO 23240 --- [cluster-rtt-ClusterId{value='667d70b5c479f3048a891d69', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:29}] to localhost:27017
+2024-06-27 19:31:25.733  INFO 23240 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@ab11e76, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72f91c91, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e268c19, org.springframework.security.web.header.HeaderWriterFilter@50e32998, org.springframework.web.filter.CorsFilter@69d6fe75, org.springframework.security.web.authentication.logout.LogoutFilter@3c1fd5aa, com.rbp.moviebookingapp.security.jwt.AuthTokenFilter@3d273300, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@baf87a5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42c9c0a1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3fe7c87c, org.springframework.security.web.session.SessionManagementFilter@5fc76532, org.springframework.security.web.access.ExceptionTranslationFilter@763a72da, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@318ca53a]
+2024-06-27 19:31:28.179  INFO 23240 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2024-06-27 19:31:28.246  INFO 23240 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2024-06-27 19:31:28.262  INFO 23240 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2024-06-27 19:31:28.264  INFO 23240 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2024-06-27 19:31:28.264  INFO 23240 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1719496888262
+2024-06-27 19:31:28.285  INFO 23240 --- [kafka-admin-client-thread | adminclient-2] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-2 unregistered
+2024-06-27 19:31:28.296  INFO 23240 --- [kafka-admin-client-thread | adminclient-2] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2024-06-27 19:31:28.296  INFO 23240 --- [kafka-admin-client-thread | adminclient-2] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-06-27 19:31:28.296  INFO 23240 --- [kafka-admin-client-thread | adminclient-2] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2024-06-27 19:31:28.318  INFO 23240 --- [main] c.r.m.MoviebookingappApplicationTests    : Started MoviebookingappApplicationTests in 4.716 seconds (JVM running for 23.726)
+2024-06-27 19:31:28.335  INFO 23240 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.rbp.moviebookingapp.security.services.MovieServiceTest], using SpringBootContextLoader
+2024-06-27 19:31:28.337  INFO 23240 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.rbp.moviebookingapp.security.services.MovieServiceTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-06-27 19:31:28.338  INFO 23240 --- [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.rbp.moviebookingapp.security.services.MovieServiceTest]: MovieServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-06-27 19:31:28.351  INFO 23240 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.rbp.moviebookingapp.MoviebookingappApplication for test class com.rbp.moviebookingapp.security.services.MovieServiceTest
+2024-06-27 19:31:28.354  INFO 23240 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+2024-06-27 19:31:28.355  INFO 23240 --- [main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1ff65426, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3bdf6d63, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@6d4bb60f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@29b61bb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2fe152aa, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6f959640, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5fdebe73, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6919a8a, org.springframework.test.context.event.EventPublishingTestExecutionListener@23c0fcf0, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@60a4595e, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@4a234e1f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@406cc81b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@64ef9b9a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@264340f0, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7640a191, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@504a9352, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@48e1e18a]
+2024-06-27 19:31:28.414  INFO 23240 --- [main] c.r.m.s.services.MovieServiceTest        : Starting MovieServiceTest using Java 17.0.2 on LAPTOP-K8CD6JID with PID 23240 (started by SUDIPTA in C:\Users\SUDIPTA\Desktop\Movie_Booking_System\MovieBookingApplication-main (2)\MovieBookingApplication-main)
+2024-06-27 19:31:28.415 DEBUG 23240 --- [main] c.r.m.s.services.MovieServiceTest        : Running with Spring Boot v2.7.12-SNAPSHOT, Spring v5.3.27
+2024-06-27 19:31:28.416  INFO 23240 --- [main] c.r.m.s.services.MovieServiceTest        : The following 1 profile is active: "test"
+2024-06-27 19:31:29.020  INFO 23240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-06-27 19:31:29.059  INFO 23240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 37 ms. Found 4 MongoDB repository interfaces.
+2024-06-27 19:31:29.661  INFO 23240 --- [main] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.6.1"}, "os": {"type": "Windows", "name": "Windows 11", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Eclipse Adoptium/17.0.2+8"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@3a4e6da6], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.Jep395RecordCodecProvider@352c3d70]}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@73e0c775], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2024-06-27 19:31:29.666  INFO 23240 --- [cluster-ClusterId{value='667d70b9c479f3048a891d6a', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:5, serverValue:31}] to localhost:27017
+2024-06-27 19:31:29.666  INFO 23240 --- [cluster-rtt-ClusterId{value='667d70b9c479f3048a891d6a', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:6, serverValue:30}] to localhost:27017
+2024-06-27 19:31:29.666  INFO 23240 --- [cluster-ClusterId{value='667d70b9c479f3048a891d6a', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2120000}
+2024-06-27 19:31:30.149  INFO 23240 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7a7d25ca, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6fb514db, org.springframework.security.web.context.SecurityContextPersistenceFilter@c105912, org.springframework.security.web.header.HeaderWriterFilter@672e4658, org.springframework.web.filter.CorsFilter@267a0b6a, org.springframework.security.web.authentication.logout.LogoutFilter@56e589e5, com.rbp.moviebookingapp.security.jwt.AuthTokenFilter@42c3b02e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@591cda84, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4c954b79, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@51039ec9, org.springframework.security.web.session.SessionManagementFilter@6bafe3b0, org.springframework.security.web.access.ExceptionTranslationFilter@4843b35f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@158e3a79]
+2024-06-27 19:31:32.734  INFO 23240 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2024-06-27 19:31:32.844  INFO 23240 --- [main] o.a.k.clients.admin.AdminClientConfig    : AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2024-06-27 19:31:32.868  INFO 23240 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version: 3.1.2
+2024-06-27 19:31:32.869  INFO 23240 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId: f8c67dc3ae0a3265
+2024-06-27 19:31:32.870  INFO 23240 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka startTimeMs: 1719496892868
+2024-06-27 19:31:32.906  INFO 23240 --- [kafka-admin-client-thread | adminclient-3] o.a.kafka.common.utils.AppInfoParser     : App info kafka.admin.client for adminclient-3 unregistered
+2024-06-27 19:31:32.918  INFO 23240 --- [kafka-admin-client-thread | adminclient-3] org.apache.kafka.common.metrics.Metrics  : Metrics scheduler closed
+2024-06-27 19:31:32.918  INFO 23240 --- [kafka-admin-client-thread | adminclient-3] org.apache.kafka.common.metrics.Metrics  : Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2024-06-27 19:31:32.918  INFO 23240 --- [kafka-admin-client-thread | adminclient-3] org.apache.kafka.common.metrics.Metrics  : Metrics reporters closed
+2024-06-27 19:31:32.945  INFO 23240 --- [main] c.r.m.s.services.MovieServiceTest        : Started MovieServiceTest in 4.587 seconds (JVM running for 28.353)

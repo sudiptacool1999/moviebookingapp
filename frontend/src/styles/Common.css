@@ -1,0 +1,99 @@
+.centered-form {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    margin-top: 19px;
+    margin-bottom: 19px;
+    padding: 10px;
+}
+.space{
+    padding: 20px;
+}
+/* .form-control{
+    padding: 5px;
+    margin:10px;
+    margin-left: 20px;
+} */
+.label-form{
+    padding: 10px;
+}
+.border {
+    border: 1px solid #0f1011;
+    /* Add border with Bootstrap's default color */
+    border-radius: 5px;
+}
+.booked{
+    margin-left: 100px !important;
+}
+.table-border {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-border th,
+.table-border td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table-border th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.table-border td {
+    text-align: center;
+}
+
+.table-border tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table-border tr:hover {
+    background-color: #ddd;
+}
+
+.button-book {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:  #fcd45c;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button-book:hover {
+    background-color: #f5bf42;
+}
+
+.button-delete {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orangered;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button-delete:hover {
+    background-color: red;
+}
+
+.headings {
+    text-align: center;
+    /* background-color:  #b8b8d4; */
+    color: black;
+}
+
+/* .search-bar{
+    background-color:  #b8b8d4;
+} */
